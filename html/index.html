@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/js.js"></script>
+    <link rel="stylesheet" href="../js/bootstrap/css/bootstrap.min.css">
+    <script src="../js/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-sm-8 col-sm-offset-2 box">
+            <div class="head-phone row">
+                <h3>Phone book</h3>
+            </div>
+            <div class="body-phone">
+                <div class="row search">
+                    <form action="">
+                        <label>Search: <input type="text" name="search" id="search"><a href=""><i class="glyphicon glyphicon-search"></i></a></label>
+                    </form>
+                </div>
+                <div class="list-phone">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>850-648-4200</td>
+                            <td><ul class="handle">
+                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                                <li>|</li>
+                                <li><a href=""><i class="fa fa-arrow-up"></i></a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                            <td>Mary</td>
+                            <td>850-648-4200</td>
+                            <td><ul class="handle">
+                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                                <li>|</li>
+                                <li><a href=""><i class="fa fa-arrow-up"></i></a></li>
+                            </ul></td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                            <td>850-648-4200</td>
+                            <td><ul class="handle">
+                            <li><a href=""><i class="fa fa-trash"></i></a></li>
+                            <li>|</li>
+                            <li><a href=""><i class="fa fa-arrow-up"></i></a></li>
+                            </ul></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="add-phone row">
+                <form class="col-sm-8 row" action="#" method="post">
+                        <label>Name: <input type="text" name="name" id="name"></label>
+                        <label>Tel: <input type="text" name="tel" id="tel"></label>
+                        <input type="submit" class="btn-primary" value="Add">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
