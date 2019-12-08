@@ -54,3 +54,12 @@ ul.handle li {
 input.btn-primary {
     padding: 5px 10px;
 }
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+/* footer */
+.mt-5.pt-5.pb-5.footer {
+    margin-top: 60px;
+    background: #9b9ea0;
+}
