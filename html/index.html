@@ -5,6 +5,10 @@
     <title>Title</title>
     <link rel="stylesheet" href="../css/css.css">
     <script src="../js/js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +17,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
+            <a class="navbar-brand" href="index.html">WebSiteName</a>
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
@@ -27,15 +31,15 @@
             <li><a href="#">Page 2</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
     </div>
 </nav>
     <div class="container-fluid">
         <div class="col-sm-8 col-sm-offset-2 box">
             <div class="head-phone row">
-                <h3>Phone book</h3>
+                <h3 style="color: #fff">Phone book</h3>
             </div>
             <div class="body-phone">
                 <div class="row search">
@@ -57,27 +61,27 @@
                             <td>John</td>
                             <td>850-648-4200</td>
                             <td><ul class="handle">
-                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                                <li><button class="btn-danger">Delete</button></li>
                                 <li>|</li>
-                                <li><a href=""><i class="fa fa-arrow-up"></i></a></li>
+                                <li><button type="button" class="btn-info" data-toggle="modal" data-target="#myModal">update</button></li>
                             </ul></td>
                         </tr>
                         <tr>
                             <td>Mary</td>
                             <td>850-648-4200</td>
                             <td><ul class="handle">
-                                <li><a href=""><i class="fa fa-trash"></i></a></li>
+                                <li><button class="btn-danger">Delete</button></li>
                                 <li>|</li>
-                                <li><a href=""><i class="fa fa-arrow-up"></i></a></li>
+                                <li><button type="button" class="btn-info" data-toggle="modal" data-target="#myModal">update</button></li>
                             </ul></td>
                         </tr>
                         <tr>
                             <td>July</td>
                             <td>850-648-4200</td>
                             <td><ul class="handle">
-                            <li><a href=""><i class="fa fa-trash"></i></a></li>
+                            <li><button class="btn-danger">Delete</button></li>
                             <li>|</li>
-                            <li><a href=""><i class="fa fa-arrow-up"></i></a></li>
+                            <li><button type="button" class="btn-info" data-toggle="modal" data-target="#myModal">update</button></li>
                             </ul></td>
                         </tr>
                         </tbody>
@@ -126,6 +130,30 @@
                 <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
             </div>
         </div>
+    </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <input type="text" class="form-control" placeholder="Name...">
+                    <br>
+                    <input type="text" class="form-control" placeholder="Phone...">
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" >Update</button>
+            </div>
+        </div>
+
     </div>
 </div>
 </body>

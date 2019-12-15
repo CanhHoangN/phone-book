@@ -3,7 +3,7 @@
 }
 
 .head-phone {
-    background: aqua;
+    background: #141717;
     /* width: 100%; */
     margin: 0px;
     padding: 15px;
@@ -61,5 +61,8 @@ input.btn-primary {
 /* footer */
 .mt-5.pt-5.pb-5.footer {
     margin-top: 60px;
-    background: #9b9ea0;
+    background: #212121;
+}
+.mt-5.pt-5.pb-5.footer {
+    color: #fff !important;
 }
